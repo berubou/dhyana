@@ -1,0 +1,76 @@
+{
+  "name": "dhyana",
+  "version": "0.0.1",
+  "description": "github blog generator",
+  "main": "index.js",
+  "scripts": {
+    "client": "env DEBUG=true webpack-dev-server --config scripts/build/webpack.dev.js --inline --progress --port 1338",
+    "client:build": "rm -rf ./dist && webpack --config scripts/build/webpack.prod.js",
+    "client:i18n": "./node_modules/.bin/ng-xi18n -p ./client --i18nFormat=xlf --locale=en-US"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/DhyanaChina/dhyana"
+  },
+  "author": "DhyanaChina (https://github.com/DhyanaChina)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/DhyanaChina/dhyana/issues"
+  },
+  "homepage": "https://github.com/DhyanaChina/dhyana#readme",
+  "devDependencies": {
+    "@angular/animations": "^4.0.0",
+    "@angular/common": "^4.0.0",
+    "@angular/compiler": "^4.0.0",
+    "@angular/compiler-cli": "^4.0.0",
+    "@angular/core": "^4.0.0",
+    "@angular/forms": "^4.0.0",
+    "@angular/http": "^4.0.0",
+    "@angular/language-service": "^4.0.0",
+    "@angular/platform-browser": "^4.0.0",
+    "@angular/platform-browser-dynamic": "^4.0.0",
+    "@angular/platform-server": "^4.0.0",
+    "@angular/router": "^4.0.0",
+    "@types/highlight.js": "^9.1.9",
+    "@types/node": "^6.0.56",
+    "@types/webpack": "^3.0.9",
+    "angular-router-loader": "^0.6.0",
+    "angular2-template-loader": "^0.6.2",
+    "app-root-path": "^2.0.1",
+    "awesome-typescript-loader": "^3.2.2",
+    "copy-webpack-plugin": "^4.0.1",
+    "core-js": "^2.4.1",
+    "css-loader": "^0.28.4",
+    "del": "^3.0.0",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "gh-pages": "^1.0.0",
+    "gulp": "github:gulpjs/gulp#4.0",
+    "gulp-cached": "^1.1.1",
+    "gulp-tslint": "^8.1.1",
+    "highlight.js": "^9.12.0",
+    "html-loader": "^0.5.0",
+    "html-webpack-plugin": "^2.30.1",
+    "i": "^0.3.5",
+    "node-sass": "^4.5.3",
+    "raw-loader": "^0.5.1",
+    "request-promise-native": "^1.0.5",
+    "rxjs": "^5.2.0",
+    "sass-loader": "^6.0.6",
+    "style-loader": "^0.18.2",
+    "tslint": "^5.5.0",
+    "tslint-loader": "^3.5.3",
+    "typescript": "^2.4.2",
+    "url-loader": "^0.5.9",
+    "webpack": "^3.4.1",
+    "webpack-dev-server": "^2.6.1",
+    "webpack-merge": "^4.1.0",
+    "yargs": "^8.0.2",
+    "zone.js": "^0.8.16"
+  },
+  "dependencies": {
+    "element-angular": "^0.1.1"
+  },
+  "peerDependencies": {
+    "file-loader": "^1.1.5"
+  }
+}
