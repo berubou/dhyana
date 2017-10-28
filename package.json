@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "client": "env DEBUG=true webpack-dev-server --config scripts/build/webpack.dev.js --inline --progress --port 1338",
+    "client:build": "rm -rf ./dist && webpack --config scripts/build/webpack.prod.js",
     "client:i18n": "./node_modules/.bin/ng-xi18n -p ./client --i18nFormat=xlf --locale=en-US"
   },
   "repository": {
